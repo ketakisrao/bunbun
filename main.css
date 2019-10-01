@@ -1,6 +1,7 @@
 body {
     padding: 0;
     margin: 0;
+    color: #505D68;
 }
 @font-face {
     font-family: 'apple-chancery';
@@ -53,8 +54,18 @@ nav {
 
 
 /* Homepage */
+.jumbotron {
+    text-align: center;
+}
 .jumbotron img{
     width: 100%;
+}
+.jumbotron h1{
+    font-family: "apple-chancery";
+}
+.jumbotron p {
+    padding: 0 15em;
+    color: #707070;
 }
 .order {
     display: flex;
