@@ -1,0 +1,50 @@
+[
+    {
+        "bunType": "Original",
+        "bunGlaze": "None",
+        "bunNum": 0,
+        "bunPic": "images/cinnamon.jpg",
+        "bunDescription": "What could be more inviting than the scent of homemade cinnamon rolls baking in the oven? Our ultimate original version combines a rich, buttery dough with the warming flavors of cinnamon and nutmeg. Drizzle these heavenly rolls with our simple glaze, and watch how quickly they disappear.",
+        "bunPrice": 0.89
+    },
+    {
+        "bunType": "Walnut",
+        "bunGlaze": "None",
+        "bunNum": 0,
+        "bunPic": "images/walnut.jpeg",
+        "bunDescription": "Full of buttery, cinnamon flavor, these Walnut Cinnamon Rolls are a holiday tradition at our Bakery!",
+        "bunPrice": 1.29
+    },
+    {
+        "bunType": "Blackberry",
+        "bunGlaze": "None",
+        "bunNum": 0,
+        "bunPic": "images/blackberry1.jpg",
+        "bunDescription": "Soft homemade cinnamon rolls made with fresh blackberries. Summer brunch or breakfast. Top these buns with your favourite glaze.",
+        "bunPrice": 0.89
+    },
+    {
+        "bunType": "Caramel Peacan",
+        "bunGlaze": "None",
+        "bunNum": 0,
+        "bunPic": "images/original.jpg",
+        "bunDescription": "Soft homemade cinnamon rolls made with crunchy peacan drizzled with caramel. Summer brunch or breakfast. Top these buns with your favourite glaze.",
+        "bunPrice": 1.00
+    },
+    {
+        "bunType": "Gluten Free",
+        "bunGlaze": "None",
+        "bunNum": 0,
+        "bunPic": "images/glutenfree.jpg",
+        "bunDescription": "What could be more inviting than the scent of homemade cinnamon rolls baking in the oven? Our ultimate original version combines a rich, buttery dough with the warming flavors of cinnamon and nutmeg. Even better, they're gluten free",
+        "bunPrice": 0.89
+    },
+    {
+        "bunType": "Pumpkin Spice",
+        "bunGlaze": "None",
+        "bunNum": 0,
+        "bunPic": "images/pumpkin.jpg",
+        "bunDescription": "Full of buttery, pumpkin spice flavor, these Rolls are perfect for the incoming fall harvest season!",
+        "bunPrice": 1.00
+    }
+]

@@ -1,0 +1,181 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+@font-face {
+    font-family: 'apple-chancery';
+    src: url(fonts/Apple\ Chancery\ Regular.ttf);
+}
+/* Header */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4em;
+    max-width: 100%;
+    background-color: #BFD8D2;
+    padding: 0 0.5em;
+}
+.brand {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.logo {
+    display: inline-block;
+    height: 3em;
+    width: 3em;
+    z-index: 2;
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+.logo img {
+    width: 100%;
+}
+.logo-text {
+    display: inline-block;
+    font-family: 'apple-chancery';
+    font-size: 1.5em;
+    margin: 0 0.5em;
+}
+.nav-items {
+    margin-left: auto;
+}
+.nav-items a {
+    padding: 0 1em;
+    color: #505D68;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    text-decoration: none;
+}
+
+
+
+/* Homepage */
+.jumbotron img{
+    width: 100%;
+}
+.order {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 1em 0;
+}
+.btn {
+    border-radius: 2px;
+    background-color: #BFD8D2;
+    border: none;
+    padding: 0.5em 3em;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.active {
+    font-weight: bold;
+}
+
+
+
+/* Product Catalogue Page */
+.card-parent {
+    justify-content: center;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 3em auto;
+}
+.card {
+    height: 18em;
+    width: 16em;
+    box-shadow: 1px 1px 5px 1px #DDD;
+    border-radius: 2px;
+    margin: 1em 1em;
+    background: #BFD8D2;
+    padding: 2em 3em;
+    cursor: pointer;
+}
+
+.card img {
+    max-width: 16em;
+}
+.card .title {
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'apple-chancery';
+    letter-spacing: 0.1em;
+}
+
+
+
+/* Product Detail Page */
+.detailed-view {
+    width: 33em;
+    margin: 0 auto;
+}
+.detailed-view .center {
+    text-align: center;
+    width: 100%;
+}
+.detailed-view .center h1 {
+    font-family: 'apple-chancery';
+    letter-spacing: 0.1em;
+}
+.detailed-view .center img {
+    max-width: 20em;
+}
+.detailed-view .description {
+    font-family: 'apple-chancery';
+    letter-spacing: 0.1em;
+    margin: 1em auto;
+    text-align: justify;
+    color: #777;
+}
+.back {
+    position: absolute;
+    height: 2em;
+    width: 2em;
+    margin-left: 1em;
+    border-radius: 50%;
+    border: 2px solid #BFD8D2;
+    color: #BFD8D2;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.detailed-view .cart button {
+    margin: 1em auto;
+}
+.detailed-view .total {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 1em;
+}
+
+.inline-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+/* Reusable radio button design */
+.radio-group {
+    padding: 2em 0;
+}
+input[type="radio"] {
+    position: absolute;
+    visibility: hidden;
+}
+
+input[type="radio"] + label {
+    cursor: pointer;
+    font-size: 1em;
+    padding: 0.5em 1em;
+    border: 4px solid #BFD8D2;
+}
+input[type="radio"]:checked + label {
+    background-color: #BFD8D2;
+}

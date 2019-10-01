@@ -1,0 +1,52 @@
+<div ng-controller="detailController">
+    <!--Detailed View when product is clicked-->
+    <div ng-show="isDetail">
+        <button class="back" title="Back" ng-click="cancelDetailedView()">
+            <i class="material-icons">
+                chevron_left
+            </i>
+        </button>
+        <div class="detailed-view">
+            <div class="center">
+                <h1>{{selectedProduct.bunType}}</h1>
+                <img ng-src="{{selectedProduct.bunPic}}" />
+            </div>
+            <div class="description">
+                {{selectedProduct.bunDescription}}
+            </div>
+            <div class="radio-group">
+                Glazing
+                <span ng-repeat="g in glazings"><input type="radio" id="{{g}}" name="glazing"
+                        ng-model='selectedProduct.bunGlaze' value="{{g}}"><label for="{{g}}">{{g}}</label></span>
+            </div>
+            <div class="inline-group">
+                <div class="radio-group">
+                    Quantity
+                    <span ng-repeat="n in numbers"><input type="radio" id="option-{{n}}" name="selector"
+                            ng-model='selectedProduct.bunNum' value="{{n}}" ng-change="changeBunNum(n)"><label
+                            for="option-{{n}}">{{n}}</label></span>
+                </div>
+                <div class="total">
+                    Total: {{totalPrice | currency}}
+                </div>
+            </div>
+            <div class="cart">
+                <button class="btn">
+                    <span class="logo-text">Add To Cart</span>
+                    <span class="logo">
+                        <img src="images/Logo.png" />
+                    </span>
+                </button></div>
+
+        </div>
+    </div>
+    <!--Combined View to display all products-->
+    <div ng-show="!isDetail">
+        <div class="card-parent">
+            <div ng-repeat="p in products" class="card" ng-click="getDetails(p)">
+                <img ng-src="{{p.bunPic}}" />
+                <p class="title">{{p.bunType}}</p>
+            </div>
+        </div>
+    </div>
+</div>
