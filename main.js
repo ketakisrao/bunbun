@@ -14,8 +14,8 @@ app.config(function ($stateProvider, $urlRouterProvider) {
         templateUrl: 'home.html'
     })
         .state({
-            name: 'order',
-            url: '/order',
+            name: 'shop',
+            url: '/shop',
             templateUrl: 'order.html'
         })
         .state({
