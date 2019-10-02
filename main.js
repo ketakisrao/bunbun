@@ -40,7 +40,7 @@ app.controller("bunbunCtrl", function ($scope) {
 });
 
 //Product Catalogue controller
-app.controller("detailController", function ($scope) {
+app.controller("detailController", function ($scope, $timeout) {
     //product details and scope variable initialization
     function init() {
         $scope.products = [
@@ -101,6 +101,7 @@ app.controller("detailController", function ($scope) {
 
         $scope.totalPrice = 0;
         $scope.isDetail = false;
+        $scope.productAddText = 'Add to Cart';
     }
     init();
 
@@ -120,5 +121,12 @@ app.controller("detailController", function ($scope) {
         $scope.isDetail = false;
         $scope.totalPrice = 0;
         $scope.selectedProduct = {};
+    }
+    //Add to Cart Text
+    $scope.changeProductText = function () {
+        $scope.productAddText = 'Success!';
+        $timeout(function(){
+        $scope.productAddText = 'Add to cart';
+        }, 1000);
     }
 });
