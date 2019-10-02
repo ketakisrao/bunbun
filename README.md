@@ -1,6 +1,6 @@
 # bunbun
 
-URL: https://github.com/ketakisrao/bunbun
+URL: https://ketakisrao.github.io/bunbun/
 
 
 ## Extra Features
